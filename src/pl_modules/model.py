@@ -60,6 +60,6 @@ class MyModel(pl.LightningModule):
             - Tuple of dictionaries as described, with an optional 'frequency' key.
             - None - Fit will run without any optimizer.
         """
-        opt = hydra.utils.instantiate(self.cfg.opt.optimizer, params=self.parameters())
-        scheduler = hydra.utils.instantiate(self.cfg.opt.lr_scheduler, optimizer=opt)
+        opt = hydra.utils.instantiate(self.cfg.optim.optimizer, params=self.parameters())
+        scheduler = hydra.utils.instantiate(self.cfg.optim.lr_scheduler, optimizer=opt)
         return [opt], [scheduler]
