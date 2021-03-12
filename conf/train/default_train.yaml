@@ -8,12 +8,12 @@ random_seed: 0
 
 pl_trainer:
   gpus: 1
-  precision: 32
-  max_steps: 10000
+  precision: 16
+  max_epochs: 5
   accumulate_grad_batches: 8
   gradient_clip_val: 10.0
 
-monitor_metric: 'val_loss'
+monitor_metric: 'avg_val_loss'
 monitor_metric_mode: 'min'
 
 early_stopping:

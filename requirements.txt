@@ -3,3 +3,5 @@ hydra-core
 wandb
 dvc
 python-dotenv
+flwr==0.14.0
+torchvision

@@ -27,7 +27,7 @@ Generic template to bootstrap your [PyTorch](https://pytorch.org/get-started/loc
     ├── common          # common python modules
     ├── pl_datamodules  # pytorch lightning datamodules
     ├── pl_modules      # pytorch lightning modules
-    └── run.py          # entry point to run current conf
+    └── client_run.py          # entry point to run current conf
 ```
 
 # Data Version Control
